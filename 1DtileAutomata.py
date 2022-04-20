@@ -225,8 +225,8 @@ for t in symbols[0]:
 	#initStates.append("L" + t)
 	#initStates.append("R" + t)
 
-for nt in symbols[1]:
-	states.append(nt)
+	for nt in symbols[1]:
+		states.append(nt + t)
 	
 
 affinities = []
@@ -369,5 +369,5 @@ while size != newSize and x < 5:
 print("Terminals: ", simulation.getTerminals())
 
 
-for t in simulation.getTerminals():
-	print(t[-2:])
+#for t in simulation.getTerminals():
+	#print(t[-2:])
